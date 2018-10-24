@@ -1,4 +1,6 @@
 ﻿using AutoCodeSecond;
+using MOTI_Vedkal_J.Alternative;
+using MOTI_Vedkal_J.Criteria;
 using MOTI_Vedkal_J.Models;
 using System;
 using System.Collections.Generic;
@@ -31,7 +33,7 @@ namespace MOTI_Vedkal_J
             var alternative = _context.Alternatives.SingleOrDefault(f => f.Name == choosenAlternative);
             if (alternative != null)
             {
-                DataTable table = new DataTable();
+                var table = new DataTable();
                 var columnNames = from f in alternative.Vectors
                                   select new DataColumn(f.Mark.Criterion.Name);
                 table.Columns.AddRange(columnNames.ToArray());
@@ -41,6 +43,20 @@ namespace MOTI_Vedkal_J
                 table.Rows[0].ItemArray = columnValues.ToArray();
 
             }
+        }
+
+        private void CriteriaBTN_Click(object sender, EventArgs e)
+        {
+            var criteriaWindow = new AddCriteria();
+            Hide();
+            criteriaWindow.ShowDialog();
+            Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var cr = new Create();
+            cr.ShowDialog();
         }
     }
 }

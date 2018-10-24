@@ -77,10 +77,11 @@
             this.ErrorLB.AutoSize = true;
             this.ErrorLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ErrorLB.ForeColor = System.Drawing.Color.Red;
-            this.ErrorLB.Location = new System.Drawing.Point(89, 50);
+            this.ErrorLB.Location = new System.Drawing.Point(154, 52);
             this.ErrorLB.Name = "ErrorLB";
             this.ErrorLB.Size = new System.Drawing.Size(0, 24);
             this.ErrorLB.TabIndex = 4;
+            this.ErrorLB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SignUp
             // 

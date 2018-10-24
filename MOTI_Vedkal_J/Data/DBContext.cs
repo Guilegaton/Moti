@@ -7,7 +7,7 @@ namespace AutoCodeSecond
 {
     class DBContext : DbContext
     {
-        public DBContext() : base("DBContext")
+        public DBContext() : base("MotiDB")
         { }
 
         public DbSet<Alternative> Alternatives { get; set; }

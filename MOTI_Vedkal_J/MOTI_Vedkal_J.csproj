@@ -52,15 +52,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Alternative\Alternatives.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Alternative\Alternatives.Designer.cs">
+      <DependentUpon>Alternatives.cs</DependentUpon>
     </Compile>
+    <Compile Include="Alternative\Create.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alternative\Create.Designer.cs">
+      <DependentUpon>Create.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criteria\AddCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Criteria\AddCriteria.Designer.cs">
+      <DependentUpon>AddCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBContext.cs" />
+    <Compile Include="Models\Alternative.cs" />
+    <Compile Include="Models\Criterion.cs" />
+    <Compile Include="Models\Enums\DataTypeForCriteria.cs" />
     <Compile Include="Models\LPR.cs" />
+    <Compile Include="Models\Mark.cs" />
+    <Compile Include="Models\Result.cs" />
+    <Compile Include="Models\Vector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Alternative\Alternatives.resx">
+      <DependentUpon>Alternatives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alternative\Create.resx">
+      <DependentUpon>Create.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Criteria\AddCriteria.resx">
+      <DependentUpon>AddCriteria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,6 +105,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -33,6 +33,13 @@ namespace MOTI_Vedkal_J
                     if(user != null)
                     {
                         Session.USER = user;
+                        var alternativesForm = new Alternatives();
+                        alternativesForm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        ErrorLB.Text = "*Incorrect login";
                     }
                 }
                 else if(context.LPRs.Any(f => f.Name == login))
@@ -55,7 +62,10 @@ namespace MOTI_Vedkal_J
                 if (!string.IsNullOrEmpty(login) && user != null)
                 {
                     ErrorLB.Text = string.Empty;
-                    Session.USER = user;
+                    this.Hide();
+                    Session.USER = user; var alternativesForm = new Alternatives();
+                    alternativesForm.ShowDialog();
+                    Close();
                 }
                 else if (context.LPRs.Any(f => f.Name == login))
                 {

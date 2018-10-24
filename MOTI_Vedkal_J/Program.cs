@@ -16,7 +16,7 @@ namespace MOTI_Vedkal_J
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SignUp());
         }
     }
 }

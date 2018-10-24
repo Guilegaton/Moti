@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MOTI_Vedkal_J/bin/Debug
+/MOTI_Vedkal_J/obj
+/MOTI_Vedkal_J/obj/Debug
